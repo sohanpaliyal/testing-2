@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>div introduction</title>
+		<style type='text/css'>
+		#main-container{
+			border:solid brown;
+		
+		}	
+		.header{
+			height:100px;
+			background-color:gray;
+			padding:10px;
+		}
+		.logo-div{
+			width:200px;
+			height:85px;
+ 			background-color:brown;
+			margin-top:10px;
+		}
+		.nav-bar{
+			border:solid;
+			height:50px;
+			margin-top:10px;
+			background-color:pink;
+		}
+		#panel-container::after{
+		content:"";
+		display:block;
+		clear:both;
+		}
+		.left-panel{
+			border:solid;
+			width:39%;
+			height:400px;
+			background-color:red;
+			margin-top:10px;
+			margin-left:10px;
+			margin-right:10px;
+			float:left;		
+		}
+		.right-panel{
+			border:solid;
+			width:57%;
+			height:400px;
+			background-color:green;
+			margin-top:10px;
+			margin-left:10px;
+			margin-right:10px;
+			float:left;
+		}
+		#footer-div{
+			border:solid;
+			height:100px;
+			background-color:brown;
+			margin:10px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id='main-container'>
+			<div class='header'>
+				<div class='logo-div'>logo</div>
+			</div>
+			<div class='nav-bar'></div>
+			<div id='panel-container'>
+				<div class='left-panel'>left side text area</div>
+				<div class='right-panel''>right side text area</div>
+			</div>
+			<div id='footer-div'>footer</div>
+		</div>
+	</body>
+
+
+
+
+</html>
